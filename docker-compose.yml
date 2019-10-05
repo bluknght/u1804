@@ -1,0 +1,10 @@
+version: '3'
+services:
+    sync:
+        image: resilio/sync
+        ports:
+            - 8888:8888
+            - 55555:55555
+        volumes:
+            - $PWD:/mnt/sync
+        restart: always
