@@ -43,5 +43,8 @@ sudo usermod -aG docker $SUDO_USER && \
 sudo mkdir ~/sync && \
 sudo mv docker-compose.yml ~/sync/ && \
 
+$ Install Digital Ocean CLI
+sudo snap install doctl && \
+
 # Shutdown
 sudo shutdown -r now
