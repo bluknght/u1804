@@ -33,6 +33,13 @@ sudo add-apt-repository universe && \
 # Install PowerShell
 sudo apt-get install -y powershell && \
 
+# Install Gluster
+echo Installing Gluster && \
+sudo apt-get install -y software-properties-common && \
+sudo add-apt-repository ppa:gluster/glusterfs-7 && \
+sudo apt-get -y update && \
+sudo apt-get install -y glusterfs-server && \
+
 # Install Python
 #sudo apt install python -y && \
 
